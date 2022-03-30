@@ -1,0 +1,14 @@
+{
+    "name": "aubreypwd/wpcs",
+    "description": "A composer and NPM package you can install to install WordPress Coding Standard Packages.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aubrey Portwood",
+            "email": "code@aubreypwd.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
