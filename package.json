@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/aubreypwd/wpcs/issues"
   },
-  "homepage": "https://github.com/aubreypwd/wpcs#readme"
+  "homepage": "https://github.com/aubreypwd/wpcs#readme",
+  "dependencies": {
+    "@wordpress/eslint-plugin": "^11.1.0"
+  }
 }
