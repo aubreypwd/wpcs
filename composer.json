@@ -12,7 +12,7 @@
     "minimum-stability": "dev",
     "require": {
         "wp-coding-standards/wpcs": "~2.3",
-        "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
+        "dealerdirect/phpcodesniffer-composer-installer": "~0.7",
         "phpcompatibility/phpcompatibility-wp": "~2.1"
     }
 }
