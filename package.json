@@ -1,6 +1,6 @@
 {
   "name": "@aubreypwd/wpcs",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "An NPM package you can install to install WordPress Coding Standards.",
   "main": "index.js",
   "scripts": {
