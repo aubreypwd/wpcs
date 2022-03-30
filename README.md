@@ -38,4 +38,6 @@ ln -sf ./vendor/aubreypwd/wpcs/.jshintrc ./.jshintrc
 
 ---------
 
-If you plan on changing any of these configurations, copy instead of symlink and modify.
+# Symlinks
+
+If you plan on changing any of these configurations, copy instead of symlink and modify instead.
