@@ -11,6 +11,8 @@ To _use_ WordPress Coding Standards for PHP, see [phpcs.xml.dist](phpcs.xml.dist
 ln -sf ./vendor/aubreypwd/wpcs/phpcs.xml.dist ./phpcs.xml.dist
 ```
 
+If you plan on changing the configuration, copy instead of symlink!
+
 ## JavaScript
 
 To _use_ WordPress Coding Standards for JS (more to come).
