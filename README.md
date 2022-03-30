@@ -4,15 +4,38 @@ Just a package you can install with either Composer or NPM and it will automatic
 
 ## PHP
 
-To _use_ WordPress Coding Standards for PHP, see [phpcs.xml.dist](phpcs.xml.dist) and either create a symlink or copy it into your project.
+### Installation
 
+```bash
+composer require aubreypwd/wpcs --dev
+```
+
+### Usage
 
 ```bash
 ln -sf ./vendor/aubreypwd/wpcs/.phpcs.xml.dist ./.phpcs.xml.dist
+ln -sf ./vendor/aubreypwd/wpcs/.editorconfig ./.editorconfig
 ```
 
-If you plan on changing the configuration, copy instead of symlink!
+- Uses `WordPress-Extra`
 
 ## JavaScript
 
-To _use_ WordPress Coding Standards for JS (more to come).
+### Installation
+
+```bash
+npm install @aubreypwd/wpcs --save-dev
+```
+
+### Usage
+
+```bash
+ln -sf ./node_modules/@aubreypwd/wpcs/.eslintrc ./.eslintrc
+ln -sf ./vendor/aubreypwd/wpcs/.jshintrc ./.jshintrc
+```
+
+- Uses `@wordpress/eslint-plugin/recommended` and disables any `prettier/prettier` rules.
+
+---------
+
+If you plan on changing any of these configurations, copy instead of symlink and modify.
