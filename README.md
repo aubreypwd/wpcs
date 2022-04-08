@@ -41,3 +41,16 @@ ln -sf ./vendor/aubreypwd/wpcs/.jshintrc ./.jshintrc
 # Symlinks
 
 If you plan on changing any of these configurations, copy instead of symlink and modify instead.
+
+# Local & Symlinks
+
+[Local](https://localwp.com/) does not like symlinks, try using `cp` for usage instead:
+
+```bash
+cp ./vendor/aubreypwd/wpcs/.phpcs.xml.dist ./.phpcs.xml.dist
+cp ./vendor/aubreypwd/wpcs/.editorconfig ./.editorconfig
+cp ./node_modules/@aubreypwd/wpcs/.eslintrc ./.eslintrc
+cp ./vendor/aubreypwd/wpcs/.jshintrc ./.jshintrc
+```
+
+Obviously, when you update the `aubreypwd/wpcs` package, run these `cp` commands again.
