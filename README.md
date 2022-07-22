@@ -1,6 +1,8 @@
 # wpcs
 
-Just a package you can install with either Composer or NPM and it will automatically install WordPress Coding Standards for:
+Just a package you can install with either Composer and/or NPM and it will automatically install WordPress Coding Standards for you:
+
+To get both PHP and JavaScript support, follow both of the steps below...
 
 ## PHP
 
@@ -8,49 +10,19 @@ Just a package you can install with either Composer or NPM and it will automatic
 
 ```bash
 composer require aubreypwd/wpcs --dev
+sh vendor/aubreypwd/wpcs/phpcs-install.sh
 ```
 
-### Usage
-
-```bash
-ln -sf ./vendor/aubreypwd/wpcs/.phpcs.xml.dist ./.phpcs.xml.dist
-ln -sf ./vendor/aubreypwd/wpcs/.editorconfig ./.editorconfig
-```
-
-- Uses `WordPress-Extra`
+- Uses `WordPress-Extra` 
+- Minimum PHP Support: 5.6+
 
 ## JavaScript
 
 ### Installation
 
 ```bash
-npm install @aubreypwd/wpcs --save-dev
-```
-
-### Usage
-
-```bash
-ln -sf ./node_modules/@aubreypwd/wpcs/.eslintrc ./.eslintrc
-ln -sf ./vendor/aubreypwd/wpcs/.jshintrc ./.jshintrc
+npm install @aubreypwd/wpcs
+sh node_modules/@aubreypwd/wpcs/js-install.sh
 ```
 
 - Uses `@wordpress/eslint-plugin/recommended` and disables any `prettier/prettier` rules.
-
----------
-
-# Symlinks
-
-If you plan on changing any of these configurations, copy instead of symlink and modify instead.
-
-# Local & Symlinks
-
-[Local](https://localwp.com/) does not like symlinks, try using `cp` for usage instead:
-
-```bash
-cp ./vendor/aubreypwd/wpcs/.phpcs.xml.dist ./.phpcs.xml.dist
-cp ./vendor/aubreypwd/wpcs/.editorconfig ./.editorconfig
-cp ./node_modules/@aubreypwd/wpcs/.eslintrc ./.eslintrc
-cp ./vendor/aubreypwd/wpcs/.jshintrc ./.jshintrc
-```
-
-Obviously, when you update the `aubreypwd/wpcs` package, run these `cp` commands again.
