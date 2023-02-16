@@ -40,7 +40,7 @@
 	<!-- Use WordPress PHP Compatibility. -->
 	<rule ref="PHPCompatibilityWP" />
 
-	<!-- WordPress Core currently supports PHP 5.6+. -->
+	<!-- WordPress still supports PHP 5.6. -->
 	<config name="testVersion" value="5.6-" />
 
 	<!-- Only sniff PHP files. -->
@@ -53,5 +53,6 @@
 	<!-- Don't sniff the following directories or file types. -->
 	<exclude-pattern>/node_modules/*</exclude-pattern>
 	<exclude-pattern>/vendor/*</exclude-pattern>
+	<exclude-pattern>/.git/*</exclude-pattern>
 
 </ruleset>
