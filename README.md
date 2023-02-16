@@ -11,7 +11,7 @@ to your liking. All of these you can simply symlink if you want to use them as-i
 ln -sf vendor/aubreypwd/wpcs/example-configs/phpcs/phpcs.xml.dist ./
 ```
 
-### Distrobution
+### Distribution
 
 Just some notes for me on how I distribute this.
 
