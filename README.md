@@ -1,28 +1,12 @@
-# wpcs
+# aubreypwd/wpcs
 
-Just a package you can install with either Composer and/or NPM and it will automatically install WordPress Coding Standards for you:
-
-To get both PHP and JavaScript support, follow both of the steps below...
-
-## PHP
+Just a package I use with either Composer and/or NPM and it will automatically install WordPress Coding Standards for you for PHP and basic JavaScript.
 
 ### Installation
 
-```bash
-composer require aubreypwd/wpcs --dev
-sh vendor/aubreypwd/wpcs/phpcs-install.sh
-```
-
-- Uses `WordPress-Extra` 
-- Minimum PHP Support: 5.6+
-
-## JavaScript
-
-### Installation
+See `example-configs` for configurations you can place in your project's root and customize
+to your liking. All of these you can simply symlink if you want to use them as-is, e.g.
 
 ```bash
-npm install @aubreypwd/wpcs
-sh node_modules/@aubreypwd/wpcs/js-install.sh
+ln -sf vendor/aubreypwd/wpcs/example-configs/phpcs/phpcs.xml.dist ./
 ```
-
-- Uses `@wordpress/eslint-plugin/recommended` and disables any `prettier/prettier` rules.
